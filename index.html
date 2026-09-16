@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Narváez — Archivos del Subsuelo</title>
+    <style>
+        :root {
+            --bg-color: #080808;
+            --text-color: #9c9c9c;
+            --accent-color: #383838;
+            --highlight: #d1d1d1;
+            --border-color: #1a1a1a;
+        }
 
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem 1rem;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        header h1 {
+            color: var(--highlight);
+            font-size: 2rem;
+            letter-spacing: 4px;
+            margin: 0;
+            text-transform: lowercase;
+        }
+
+        header p {
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            background: #050505;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--highlight);
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            color: var(--highlight);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-left: 2px solid var(--highlight);
+            padding-left: 0.7rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            font-size: 0.95rem;
+        }
+
+        .text-fragment {
+            background-color: #0c0c0c;
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .text-fragment h3 {
+            color: var(--highlight);
+            font-size: 1rem;
+            margin-top: 0;
+        }
+
+        .meta-info {
+            font-size: 0.75rem;
+            color: #444;
+            margin-top: 1rem;
+        }
+
+        .manifesto-box {
+            font-style: italic;
+            color: #888;
+            border-left: 1px solid #333;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            font-size: 0.75rem;
+            color: #333;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .glitch {
+            color: #555;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>gustavo narváez</h1>
+        <p>[ nadie lee esto. nadie debería hacerlo. ]</p>
+    </header>
+
+    <nav>
+        <a href="#manifiesto">manifiesto</a>
+        <a href="#textos">fragmentos</a>
+        <a href="#libro">la obra fantasma</a>
+        <a href="#contacto">contacto</a>
+    </nav>
+
+    <main>
+        <!-- APARTADO 1: MANIFIESTO -->
+        <section id="manifiesto">
+            <h2>Manifiesto del Subsuelo</h2>
+            <p>No escribo para ser leído; escribo para justificar el gasto de oxígeno diario. La literatura contemporánea es un cadáver vestido de gala que apesta a algoritmos y becas estatales.</p>
+            <div class="manifesto-box">
+                "Prefiero ser leído por tres personas en un sótano húmedo que por mil autómatas en la lista de los más vendidos de un centro comercial."
+            </div>
+            <p>Este espacio no tiene ISBN, no tiene editorial, no tiene patrocinadores y probablemente desaparezca en el momento en que el servidor deje de ser gratuito. Si has llegado aquí por accidente, ciérralo. Sal a la calle. Mira la pared gris de enfrente; es más honesta que cualquier novela moderna.</p>
+        </section>
+
+        <!-- APARTADO 2: FRAGMENTOS (TEXTOS UNDERGROUND) -->
+        <section id="textos">
+            <h2>Fragmentos y Basura Digital</h2>
+            
+            <div class="text-fragment">
+                <h3>I. Residuos de monitor</h3>
+                <p>Las tres de la mañana es una hora geológicamente inútil. La luz de la pantalla ilumina las partículas de polvo flotando como cenizas en una morgue personal. Tecleo palabras que borro de inmediato, un cementerio invisible de sílabas que nunca verán la luz del día. Afuera, un perro ladra a la nada; probablemente ve lo mismo que yo: la absoluta falta de sentido de todo.</p>
+                <div class="meta-info">Fecha: 03:14 AM — Sótano 4</div>
+            </div>
+
+            <div class="text-fragment">
+                <h3>II. Carne sintética</h3>
+                <p>Nos hemos convertido en apéndices de nuestros propios dispositivos. Mis manos ya no pertenecen a la anatomía humana; son prolongaciones mecánicas diseñadas para presionar plástico negro y cristal templado, buscando una chispa de dopamina en un desierto de ceros y unos.</p>
+                <div class="meta-info">Fecha: Borrador sin fecha</div>
+            </div>
+        </section>
+
+        <!-- APARTADO 3: LA OBRA FANTASMA -->
+        <section id="libro">
+            <h2>La Obra Fantasma</h2>
+            <p>Existe un volumen titulado <span class="glitch">"Catacumbas de Asfalto"</span>, impreso de forma clandestina en una imprenta de mala muerte en una edición ridícula de exactamente 13 ejemplares.</p>
+            <p>Doce de ellos fueron quemados en un barril de metal en un baldío. El decimotercero fue abandonado deliberadamente en el asiento trasero de un autobús nocturno. Si lo encuentras, bótalo a la basura o quédatelo: sus páginas huelen a humedad y fracaso.</p>
+        </section>
+
+        <!-- APARTADO 4: CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto / Silencio</h2>
+            <p>No hay redes sociales. No hay formulario de comentarios (los comentarios son el vómito de la vanidad digital). Si por alguna razón absurda necesitas enviar un mensaje, hazlo al vacío cibernético:</p>
+            <p style="text-align: center; color: #555;"><code>void.narvaez [en] riseup [punto] net</code></p>
+            <p style="text-align: center; font-size: 0.8rem; color: #444;">(Los correos son leídos aleatoriamente y eliminados sin respuesta).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gustavo Narváez. Ningún derecho reservados. Copia esto si te da la gana.</p>
+    </footer>
+
+</body>
+</html>
