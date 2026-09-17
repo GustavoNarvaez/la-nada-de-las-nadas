@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gustavo Narváez — Archivos del Subsuelo</title>
+
     <style>
         :root {
             --bg-color: #080808;
@@ -11,6 +13,10 @@
             --accent-color: #383838;
             --highlight: #d1d1d1;
             --border-color: #1a1a1a;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
@@ -46,6 +52,8 @@
         nav {
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
             gap: 1.5rem;
             padding: 1rem;
             background: #050505;
@@ -63,6 +71,30 @@
         nav a:hover {
             color: var(--highlight);
             text-decoration: underline;
+        }
+
+        /* BOTÓN DE MEDIUM */
+
+        .medium-button {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid #444;
+            border-radius: 3px;
+            color: #d1d1d1;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            background: #0c0c0c;
+            transition: all 0.3s ease;
+        }
+
+        .medium-button:hover {
+            background: #d1d1d1;
+            color: #080808;
+            border-color: #d1d1d1;
+            box-shadow: 0 0 12px rgba(209, 209, 209, 0.2);
+            text-decoration: none;
         }
 
         main {
@@ -131,68 +163,232 @@
             color: #555;
             text-decoration: line-through;
         }
+
+        /* ADAPTACIÓN PARA CELULARES */
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+            }
+
+            nav {
+                gap: 1rem;
+                font-size: 0.8rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <header>
         <h1>gustavo narváez</h1>
-        <p>[ nadie lee esto. nadie debería hacerlo. ]</p>
+
+        <p>
+            [ nadie lee esto. nadie debería hacerlo. ]
+        </p>
     </header>
 
     <nav>
-        <a href="#manifiesto">manifiesto</a>
-        <a href="#textos">fragmentos</a>
-        <a href="#libro">la obra fantasma</a>
-        <a href="#contacto">contacto</a>
+
+        <a href="#manifiesto">
+            manifiesto
+        </a>
+
+        <a href="#textos">
+            fragmentos
+        </a>
+
+        <a href="#libro">
+            la obra fantasma
+        </a>
+
+        <a href="#contacto">
+            contacto
+        </a>
+
+        <!-- BOTÓN MEDIUM -->
+
+        <a
+            href="https://medium.com/@felipedejesusgarciapatino/about"
+            class="medium-button"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ◈ LEER EN MEDIUM
+        </a>
+
     </nav>
 
     <main>
+
         <!-- APARTADO 1: MANIFIESTO -->
+
         <section id="manifiesto">
-            <h2>Manifiesto del Subsuelo</h2>
-            <p>No escribo para ser leído; escribo para justificar el gasto de oxígeno diario. La literatura contemporánea es un cadáver vestido de gala que apesta a algoritmos y becas estatales.</p>
+
+            <h2>
+                Manifiesto del Subsuelo
+            </h2>
+
+            <p>
+                No escribo para ser leído; escribo para justificar
+                el gasto de oxígeno diario. La literatura contemporánea
+                es un cadáver vestido de gala que apesta a algoritmos
+                y becas estatales.
+            </p>
+
             <div class="manifesto-box">
-                "Prefiero ser leído por tres personas en un sótano húmedo que por mil autómatas en la lista de los más vendidos de un centro comercial."
+
+                "Prefiero ser leído por tres personas en un sótano
+                húmedo que por mil autómatas en la lista de los más
+                vendidos de un centro comercial."
+
             </div>
-            <p>Este espacio no tiene ISBN, no tiene editorial, no tiene patrocinadores y probablemente desaparezca en el momento en que el servidor deje de ser gratuito. Si has llegado aquí por accidente, ciérralo. Sal a la calle. Mira la pared gris de enfrente; es más honesta que cualquier novela moderna.</p>
+
+            <p>
+                Este espacio no tiene ISBN, no tiene editorial,
+                no tiene patrocinadores y probablemente desaparezca
+                en el momento en que el servidor deje de ser gratuito.
+                Si has llegado aquí por accidente, ciérralo.
+                Sal a la calle. Mira la pared gris de enfrente;
+                es más honesta que cualquier novela moderna.
+            </p>
+
         </section>
 
-        <!-- APARTADO 2: FRAGMENTOS (TEXTOS UNDERGROUND) -->
+
+        <!-- APARTADO 2: FRAGMENTOS -->
+
         <section id="textos">
-            <h2>Fragmentos y Basura Digital</h2>
-            
-            <div class="text-fragment">
-                <h3>I. Residuos de monitor</h3>
-                <p>Las tres de la mañana es una hora geológicamente inútil. La luz de la pantalla ilumina las partículas de polvo flotando como cenizas en una morgue personal. Tecleo palabras que borro de inmediato, un cementerio invisible de sílabas que nunca verán la luz del día. Afuera, un perro ladra a la nada; probablemente ve lo mismo que yo: la absoluta falta de sentido de todo.</p>
-                <div class="meta-info">Fecha: 03:14 AM — Sótano 4</div>
-            </div>
+
+            <h2>
+                Fragmentos y Basura Digital
+            </h2>
+
 
             <div class="text-fragment">
-                <h3>II. Carne sintética</h3>
-                <p>Nos hemos convertido en apéndices de nuestros propios dispositivos. Mis manos ya no pertenecen a la anatomía humana; son prolongaciones mecánicas diseñadas para presionar plástico negro y cristal templado, buscando una chispa de dopamina en un desierto de ceros y unos.</p>
-                <div class="meta-info">Fecha: Borrador sin fecha</div>
+
+                <h3>
+                    I. Residuos de monitor
+                </h3>
+
+                <p>
+                    Las tres de la mañana es una hora geológicamente
+                    inútil. La luz de la pantalla ilumina las partículas
+                    de polvo flotando como cenizas en una morgue personal.
+                    Tecleo palabras que borro de inmediato, un cementerio
+                    invisible de sílabas que nunca verán la luz del día.
+                    Afuera, un perro ladra a la nada; probablemente ve
+                    lo mismo que yo: la absoluta falta de sentido de todo.
+                </p>
+
+                <div class="meta-info">
+                    Fecha: 03:14 AM — Sótano 4
+                </div>
+
             </div>
+
+
+            <div class="text-fragment">
+
+                <h3>
+                    II. Carne sintética
+                </h3>
+
+                <p>
+                    Nos hemos convertido en apéndices de nuestros propios
+                    dispositivos. Mis manos ya no pertenecen a la anatomía
+                    humana; son prolongaciones mecánicas diseñadas para
+                    presionar plástico negro y cristal templado, buscando
+                    una chispa de dopamina en un desierto de ceros y unos.
+                </p>
+
+                <div class="meta-info">
+                    Fecha: Borrador sin fecha
+                </div>
+
+            </div>
+
         </section>
+
 
         <!-- APARTADO 3: LA OBRA FANTASMA -->
+
         <section id="libro">
-            <h2>La Obra Fantasma</h2>
-            <p>Existe un volumen titulado <span class="glitch">"Catacumbas de Asfalto"</span>, impreso de forma clandestina en una imprenta de mala muerte en una edición ridícula de exactamente 13 ejemplares.</p>
-            <p>Doce de ellos fueron quemados en un barril de metal en un baldío. El decimotercero fue abandonado deliberadamente en el asiento trasero de un autobús nocturno. Si lo encuentras, bótalo a la basura o quédatelo: sus páginas huelen a humedad y fracaso.</p>
+
+            <h2>
+                La Obra Fantasma
+            </h2>
+
+            <p>
+                Existe un volumen titulado
+                <span class="glitch">
+                    "Catacumbas de Asfalto"
+                </span>,
+                impreso de forma clandestina en una imprenta
+                de mala muerte en una edición ridícula de exactamente
+                13 ejemplares.
+            </p>
+
+            <p>
+                Doce de ellos fueron quemados en un barril de metal
+                en un baldío. El decimotercero fue abandonado
+                deliberadamente en el asiento trasero de un autobús
+                nocturno. Si lo encuentras, bótalo a la basura
+                o quédatelo: sus páginas huelen a humedad y fracaso.
+            </p>
+
         </section>
+
 
         <!-- APARTADO 4: CONTACTO -->
+
         <section id="contacto">
-            <h2>Contacto / Silencio</h2>
-            <p>No hay redes sociales. No hay formulario de comentarios (los comentarios son el vómito de la vanidad digital). Si por alguna razón absurda necesitas enviar un mensaje, hazlo al vacío cibernético:</p>
-            <p style="text-align: center; color: #555;"><code>void.narvaez [en] riseup [punto] net</code></p>
-            <p style="text-align: center; font-size: 0.8rem; color: #444;">(Los correos son leídos aleatoriamente y eliminados sin respuesta).</p>
+
+            <h2>
+                Contacto / Silencio
+            </h2>
+
+            <p>
+                No hay redes sociales. No hay formulario de comentarios
+                (los comentarios son el vómito de la vanidad digital).
+                Si por alguna razón absurda necesitas enviar un mensaje,
+                hazlo al vacío cibernético:
+            </p>
+
+            <p style="text-align: center; color: #555;">
+
+                <code>
+                    void.narvaez [en] riseup [punto] net
+                </code>
+
+            </p>
+
+            <p style="text-align: center; font-size: 0.8rem; color: #444;">
+
+                (Los correos son leídos aleatoriamente y eliminados
+                sin respuesta).
+
+            </p>
+
         </section>
+
     </main>
 
+
     <footer>
-        <p>&copy; 2026 Gustavo Narváez. Ningún derecho reservados. Copia esto si te da la gana.</p>
+
+        <p>
+            &copy; 2026 Gustavo Narváez.
+            Ningún derecho reservados.
+            Copia esto si te da la gana.
+        </p>
+
     </footer>
 
 </body>
