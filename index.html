@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Gustavo Narváez — Archivos del Subsuelo</title>
 
     <style>
+
         :root {
             --bg-color: #080808;
             --text-color: #9c9c9c;
@@ -30,7 +32,7 @@
 
         header {
             text-align: center;
-            padding: 4rem 1rem 2rem 1rem;
+            padding: 4rem 1rem 3rem 1rem;
             border-bottom: 1px dashed var(--border-color);
         }
 
@@ -49,10 +51,32 @@
             font-style: italic;
         }
 
+        /* BOTÓN VISIBLE DE MEDIUM */
+
+        .medium-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #151515;
+            border: 1px solid #666;
+            color: #d1d1d1;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .medium-button:hover {
+            background: #d1d1d1;
+            color: #080808;
+            border-color: #d1d1d1;
+            box-shadow: 0 0 15px rgba(209, 209, 209, 0.2);
+        }
+
         nav {
             display: flex;
             justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
             gap: 1.5rem;
             padding: 1rem;
@@ -71,30 +95,6 @@
         nav a:hover {
             color: var(--highlight);
             text-decoration: underline;
-        }
-
-        /* BOTÓN DE MEDIUM */
-
-        .medium-button {
-            display: inline-block;
-            padding: 8px 16px;
-            border: 1px solid #444;
-            border-radius: 3px;
-            color: #d1d1d1;
-            text-decoration: none;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            background: #0c0c0c;
-            transition: all 0.3s ease;
-        }
-
-        .medium-button:hover {
-            background: #d1d1d1;
-            color: #080808;
-            border-color: #d1d1d1;
-            box-shadow: 0 0 12px rgba(209, 209, 209, 0.2);
-            text-decoration: none;
         }
 
         main {
@@ -167,6 +167,7 @@
         /* ADAPTACIÓN PARA CELULARES */
 
         @media (max-width: 600px) {
+
             header h1 {
                 font-size: 1.5rem;
                 letter-spacing: 2px;
@@ -180,19 +181,46 @@
             main {
                 padding: 2rem 1rem;
             }
+
+            .medium-button {
+                font-size: 0.8rem;
+                padding: 12px 20px;
+            }
+
         }
+
     </style>
+
 </head>
 
 <body>
 
+    <!-- ENCABEZADO -->
+
     <header>
+
         <h1>gustavo narváez</h1>
 
         <p>
             [ nadie lee esto. nadie debería hacerlo. ]
         </p>
+
+        <!-- BOTÓN MEDIUM VISIBLE -->
+
+        <a
+            href="https://medium.com/@felipedejesusgarciapatino/about"
+            class="medium-button"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            ◈ VISITAR MI MEDIUM
+
+        </a>
+
     </header>
+
+
+    <!-- MENÚ DE NAVEGACIÓN -->
 
     <nav>
 
@@ -212,20 +240,13 @@
             contacto
         </a>
 
-        <!-- BOTÓN MEDIUM -->
-
-        <a
-            href="https://medium.com/@felipedejesusgarciapatino/about"
-            class="medium-button"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            ◈ LEER EN MEDIUM
-        </a>
-
     </nav>
 
+
+    <!-- CONTENIDO PRINCIPAL -->
+
     <main>
+
 
         <!-- APARTADO 1: MANIFIESTO -->
 
@@ -262,6 +283,7 @@
         </section>
 
 
+
         <!-- APARTADO 2: FRAGMENTOS -->
 
         <section id="textos">
@@ -294,6 +316,7 @@
             </div>
 
 
+
             <div class="text-fragment">
 
                 <h3>
@@ -315,6 +338,7 @@
             </div>
 
         </section>
+
 
 
         <!-- APARTADO 3: LA OBRA FANTASMA -->
@@ -344,6 +368,7 @@
             </p>
 
         </section>
+
 
 
         <!-- APARTADO 4: CONTACTO -->
@@ -378,8 +403,12 @@
 
         </section>
 
+
     </main>
 
+
+
+    <!-- PIE DE PÁGINA -->
 
     <footer>
 
@@ -391,5 +420,7 @@
 
     </footer>
 
+
 </body>
+
 </html>
